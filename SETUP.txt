@@ -1,0 +1,49 @@
+🎉 QUICK SETUP GUIDE 🎉
+
+STEP 1: Add Your Images
+========================
+You need to add 2 images to this folder:
+
+1. Save your first image as: image1.jpg
+2. Save your second image as: image2.jpg
+
+(The images you shared in the chat should be renamed to these names)
+
+STEP 2: Deploy to Vercel
+=========================
+
+Method A - Using Vercel CLI (Recommended):
+------------------------------------------
+1. Open PowerShell in this folder
+2. Install Vercel CLI (one time only):
+   npm i -g vercel
+
+3. Login to Vercel:
+   vercel login
+
+4. Deploy:
+   vercel
+
+5. Follow the prompts and your site will be live!
+
+Method B - Using Vercel Website:
+--------------------------------
+1. Create a GitHub repository (optional but recommended)
+2. Push this folder to GitHub
+3. Go to https://vercel.com
+4. Click "Add New Project"
+5. Import your GitHub repository (or drag and drop this folder)
+6. Click "Deploy"
+
+Method C - Drag and Drop:
+-------------------------
+1. Zip this entire folder
+2. Go to https://vercel.com
+3. Drag and drop the zip file
+4. Click "Deploy"
+
+STEP 3: Test Locally (Optional)
+================================
+Just open index.html in your web browser to test before deploying!
+
+That's it! Your romantic website will be live on Vercel! 💕

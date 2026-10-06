@@ -1,0 +1,17 @@
+{
+  "name": "do-you-love-me",
+  "version": "1.0.0",
+  "description": "Interactive 'Do You Love Me?' website with moving buttons and image gallery",
+  "main": "index.html",
+  "scripts": {
+    "deploy": "vercel"
+  },
+  "keywords": [
+    "love",
+    "interactive",
+    "romantic",
+    "vercel"
+  ],
+  "author": "",
+  "license": "MIT"
+}
