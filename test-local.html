@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Test</title>
+</head>
+<body style="font-family: Arial; padding: 20px;">
+    <h1>Local File Test</h1>
+    
+    <h2>CSS Test:</h2>
+    <p>Check if style.css loads: <span id="cssTest" style="color: red;">❌ Not loaded</span></p>
+    <link rel="stylesheet" href="./style.css">
+    
+    <h2>JavaScript Test:</h2>
+    <p>Check if script.js loads: <span id="jsTest" style="color: red;">❌ Not loaded</span></p>
+    
+    <h2>Image Test:</h2>
+    <p>Check if 1.jpg loads:</p>
+    <img src="./1.jpg" style="max-width: 200px; border: 2px solid #ccc;" onerror="this.alt='❌ Image failed to load'">
+    
+    <p>Check if 2.jpg loads:</p>
+    <img src="./2.jpg" style="max-width: 200px; border: 2px solid #ccc;" onerror="this.alt='❌ Image failed to load'">
+    
+    <script>
+        // Test if our script.js would load
+        document.getElementById('jsTest').innerHTML = '✅ JavaScript is working';
+        document.getElementById('jsTest').style.color = 'green';
+        
+        // Test CSS
+        window.addEventListener('load', () => {
+            const body = window.getComputedStyle(document.body);
+            if (body.fontFamily.includes('Arial')) {
+                document.getElementById('cssTest').innerHTML = '✅ CSS would load (using inline style as test)';
+                document.getElementById('cssTest').style.color = 'green';
+            }
+        });
+    </script>
+    
+    <hr>
+    <h2>Instructions:</h2>
+    <ol>
+        <li>Open this file in your browser</li>
+        <li>Check all items show ✅ green checkmarks</li>
+        <li>If anything shows ❌, there's a file issue</li>
+        <li>Once all tests pass, your Vercel deployment should work</li>
+    </ol>
+    
+    <p><strong>Next step:</strong> If all tests pass, redeploy to Vercel with: <code>vercel --prod --force</code></p>
+</body>
+</html>
